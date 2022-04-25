@@ -46,7 +46,7 @@ export const useCollection = (col, _q, _orderBy) => {
     );
 
     return () => unsub();
-  }, [col, q]);
+  }, [col, q, ordBy]);
 
   return { documents, error };
 };
